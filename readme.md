@@ -7,3 +7,6 @@ https://htmlpreview.github.io/?https://github.com/philipphermes/YouTubeDownloade
 3. click start
 4. wait until green box says "download Now!"
 5. download
+
+## Info
+* I have problems when I download HDR videos and want to play them back on my phone use VLC to evade this problem
