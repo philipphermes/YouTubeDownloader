@@ -71,9 +71,6 @@ body {
 
 #button-container button {
     width: 20%;
-}
-
-#button-container button {
     border: #FFFF solid 2px;
     background-color: #454545;
     color: #FFFF;
@@ -104,10 +101,23 @@ body {
     }
 
     #container h1 {
-        font-size: xxx-large;
+        font-size: 90px;
     }
 
     #container label {
-        font-size: xx-large;
+        font-size: 50px;
+    }
+
+    #link-container input {
+        font-size: 50px;
+    }
+
+    #format-container select {
+        font-size: 50px;
+    }
+
+    #button-container button {
+        width: 40%;
+        font-size: 50px;
     }
 }
