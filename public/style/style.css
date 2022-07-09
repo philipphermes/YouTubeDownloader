@@ -94,6 +94,10 @@ body {
     margin-top: 10px;
 }
 
+#loader-button iframe{
+    width: 100%;
+}
+
 @media only screen and (max-device-width: 480px) {
     #container {
         width: 100%;
