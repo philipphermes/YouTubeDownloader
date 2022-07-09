@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>YouTube Video Downloader</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">YouTube Downloader</h1>
+        <div class="link-container">
+            <label for="link">Video Link:</label>
+            <input type="text" name="link" class="link" id="link" placeholder="Enter Video Link" required>
+        </div>
+        <div class="format-conatiner">
+            <label for="format">Video Format:</label>
+            <select class="format" name="video_format" id="format" required>
+                <option selected disabled>Select Video Format</option>
+                <option value="mp3">Mp3</option>
+                <option value="mp4a">Mp4 144p</option>
+                <option value="360">Mp4 360p</option>
+                <option value="480">Mp4 480p</option>
+                <option value="720">Mp4 720p</option>
+                <option value="1080">Mp4 1080p</option>
+                <option value="4k">Mp4 4k</option>
+                <option value="8k">Mp4 8k</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button onclick="download()">Start</button>
+        </div>
+        <div class="loader-button" id="loader-button">
+        </div>
+        <script type="application/javascript">
+            function download() {
+                var output = document.getElementById('loader-button');
+
+                var link = document.getElementById('link').value;
+                var format = document.getElementById('format').value;
+
+                output.innerHTML = '<iframe sandbox="allow-same-origin allow-scripts allow-downloads" style="height:50px; border:none; overflow:hidden;" src="https://loader.to/api/button/?url='+link+'&f='+format+'"></iframe>';
+            }
+        </script>
+    </header>
+</body>
+</html>
