@@ -2,36 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="public/style/style.css">
     <title>YouTube Video Downloader</title>
     <script type="application/javascript" src="public/script/loaderApi.js"></script>
 </head>
 <body>
-    <header>
-        <h1 class="title">YouTube Downloader</h1>
-        <div class="link-container">
+    <div id="container">
+        <div id="header-container">
+            <h1>YouTube Downloader</h1>
+        </div>
+        <div id="link-container">
             <label for="link">Video Link:</label>
             <input type="text" name="link" class="link" id="link" placeholder="Enter Video Link" required>
         </div>
-        <div class="format-conatiner">
+        <div id="format-container">
             <label for="format">Video Format:</label>
             <select class="format" name="video_format" id="format" required>
                 <option selected disabled>Select Video Format</option>
-                <option value="mp3">Mp3</option>
-                <option value="mp4a">Mp4 144p</option>
-                <option value="360">Mp4 360p</option>
-                <option value="480">Mp4 480p</option>
-                <option value="720">Mp4 720p</option>
-                <option value="1080">Mp4 1080p</option>
-                <option value="4k">Mp4 4k</option>
-                <option value="8k">Mp4 8k</option>
+                <option value="mp3">mp3</option>
+                <option value="mp4a">mp4 144p</option>
+                <option value="360">mp4 360p</option>
+                <option value="480">mp4 480p</option>
+                <option value="720">mp4 720p</option>
+                <option value="1080">mp4 1080p</option>
+                <option value="4k">webm 4k</option>
+                <option value="8k">webm 8k</option>
             </select>
         </div>
-        <div class="button-container">
+        <div id="button-container">
             <button onclick="download()">Start</button>
         </div>
-        <div class="loader-button" id="loader-button">
+        <div id="loader-button">
         </div>
-    </header>
+    </div>
 </body>
 </html>

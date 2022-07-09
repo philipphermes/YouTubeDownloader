@@ -1,0 +1,109 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, serif;
+    font-size: x-large;
+    background-color: #454545;
+}
+
+#container {
+    padding: 10px;
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    background-color: #282828;
+}
+
+#container h1, label {
+    color: #FF0000;
+}
+
+#header-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#link-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#link-container label, input {
+    width: 100%;
+}
+
+#link-container input {
+    background-color: #454545;
+    color: #FFFF;
+    border: #FFFF solid 2px;
+    padding: 2px;
+}
+
+#format-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#format-container label, select {
+    width: 100%;
+}
+
+#format-container select {
+    border: #FFFF solid 2px;
+    background-color: #454545;
+    color: #FFFF;
+    padding: 2px;
+}
+
+#button-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#button-container button {
+    width: 20%;
+}
+
+#button-container button {
+    border: #FFFF solid 2px;
+    background-color: #454545;
+    color: #FFFF;
+    padding: 2px;
+}
+
+#button-container button:hover {
+    border: #FFFF solid 2px;
+    background-color: #FF0000;
+    color: #FFFF;
+    padding: 2px;
+}
+
+#loader-button {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #container {
+        width: 100%;
+    }
+
+    #container h1 {
+        font-size: xxx-large;
+    }
+
+    #container label {
+        font-size: xx-large;
+    }
+}
